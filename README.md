@@ -4,8 +4,22 @@ My resume, largely sourced and inspired from [Awesome CV](https://github.com/pos
 View the [PDF](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/blakermchale/resume/master/resume.pdf).
 
 <div align="center">
-  <img alt="Résumé" src="https://raw.githubusercontent.com/blakermchale/resume/master/resume.png" width="70%" />
+  <img alt="Résumé" src="resume.jpg" width="70%" />
 </div>
 
 ## Quick Start
 Feel free to modify my `.tex` file to create your own resume! Please don't use my resume for anything else without permission though.
+
+## Build
+
+### PDF
+
+`xelatex resume.tex`
+
+### PNG
+
+`magick resume.pdf -background white -alpha remove -alpha off resume.png`
+
+### JPG
+
+`magick -density 400 -colorspace RGB resume.pdf resume.jpg`
