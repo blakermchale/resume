@@ -1,0 +1,5 @@
+{
+    "latex-preview.command": "latexmk",
+    "latex-preview.filename": "resume.tex",
+    "latex-workshop.latex.build.forceRecipeUsage": false,
+}
